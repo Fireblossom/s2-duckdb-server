@@ -1,0 +1,22 @@
+# deployment config and secrets: never commit
+deploy/s2db.env
+*.key
+.s2db_key
+api_key
+
+# data
+/raw/
+/data/
+/cache/
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.gz.part
+
+# python
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+/build/
+/dist/
